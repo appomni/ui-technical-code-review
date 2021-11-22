@@ -9,6 +9,7 @@
     <div class="contact__notes">
       {{ contact.notes }}
     </div>
+    <button @click="$emit('delete', contact)">Delete</button>
   </div>
 </template>
 <script lang="ts">
