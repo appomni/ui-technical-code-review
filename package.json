@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "database": "json-server --watch db.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -10,6 +11,10 @@
   "dependencies": {
     "axios": "0.21.x",
     "core-js": "^3.6.5",
+    "glob-parent": ">=5.1.2",
+    "json-schema": ">=0.4.0",
+    "json-server": "^0.17.0",
+    "save": "^2.4.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -24,11 +29,9 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "postcss-cssnext": "3.1.x",
-    "postcss-import": "12.0.x",
-    "postcss-loader": "3.0.x",
-    "postcss-nested": "4.2.x",
-    "postcss-url": "8.0.x",
+    "glob-parent": ">=5.1.2",
+    "json-schema": ">=0.4.0",
+    "json-server": "^0.17.0",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
   },

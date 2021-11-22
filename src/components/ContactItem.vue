@@ -6,8 +6,8 @@
     <div class="contact__email">
       <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
     </div>
-    <div class="contact__phone">
-      {{ contact.phone }}
+    <div class="contact__notes">
+      {{ contact.notes }}
     </div>
   </div>
 </template>
