@@ -7,6 +7,7 @@
       @addContact="add"
       @update="editContact"
     />
+    <button v-else @click="showForm = true">Add</button>
     <ul class="contacts-list">
       <li
         class="contacts-list__item"
@@ -38,14 +39,14 @@ export default Vue.extend({
     return {
       contacts: [] as any,
       contactToEdit: undefined,
-      showForm: true,
+      showForm: false,
     };
   },
   methods: {
     async add(contactToAdd: any) {
       await contactService.createContact(contactToAdd);
-      this.getContacts();
-      // this.contacts.push(contactToAdd);
+      this.contacts.push(contactToAdd);
+      this.showForm = false;
     },
     async deleteContact(contact: any) {
       const indexToRemove = this.contacts.findIndex((c: any) => c.id === contact.id);
@@ -56,7 +57,8 @@ export default Vue.extend({
     },
     async editContact(contactToEdit: any) {
       await contactService.editContact(contactToEdit);
-      this.getContacts();
+      await this.getContacts();
+      this.showForm = false;
     },
     async getContacts() {
       this.contacts = await contactService.getContacts();

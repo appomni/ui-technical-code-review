@@ -6,13 +6,13 @@
     </div>
     <div class="field">
       <label>Email:</label>
-      <input v-model="internalContact.email" type="email" />
+      <input v-model="internalContact.email" type="text" />
     </div>
     <div class="field">
-      <label>phone</label>
-      <input v-model="internalContact.phone" type="phone" />
+      <label>Notes</label>
+      <textarea v-model="internalContact.notes"> </textarea>
     </div>
-    <button type="submit">
+    <button :disabled="!submittable" type="submit">
       {{ internalContact.id ? "Update" : "Create" }}
     </button>
   </form>
@@ -26,13 +26,18 @@ export default Vue.extend({
     contact: {
       type: Object,
       required: false,
-      default: null,
+      default: undefined,
     },
   },
   data() {
     return {
       internalContact: {} as any,
     };
+  },
+  computed: {
+    submittable(): boolean {
+      return this.internalContact.name && (this.internalContact.email && this.internalContact.email.includes('@'));
+    },
   },
   watch: {
     contact: {
