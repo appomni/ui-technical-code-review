@@ -1,5 +1,7 @@
 # ui-technical-code-review
 
+Welcome to the latest and greatest in Contact Management technology.
+
 ## Project setup
 ```
 npm install
@@ -10,15 +12,8 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Spins up data base
+### This is required to interact with the mock API
 ```
-npm run build
+json-server --watch db.json
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
