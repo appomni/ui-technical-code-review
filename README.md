@@ -12,8 +12,8 @@ npm install
 npm run serve
 ```
 
-### Spins up data base
+### Spin up data base in seperate terminal
 ### This is required to interact with the mock API
 ```
-json-server --watch db.json
+npm run database
 ```
