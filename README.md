@@ -2,18 +2,14 @@
 
 Welcome to the latest and greatest in Contact Management technology.
 
-## Project setup
+## Project setup steps:
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Spin up data base in seperate terminal
-### This is required to interact with the mock API
+In seperate terminal run:
 ```
 npm run database
 ```
