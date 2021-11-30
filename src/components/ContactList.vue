@@ -16,12 +16,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import ContactItem from "./ContactItem.vue";
+import ContactItem from './ContactItem.vue';
 
-import contactService from "../services/contact";
+import contactService from '../services/contact';
 
 export default Vue.extend({
-  name: "ContactList",
+  name: 'ContactList',
   components: {
     ContactItem,
   },

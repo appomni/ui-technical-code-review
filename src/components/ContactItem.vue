@@ -15,7 +15,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: "ContactItem",
+  name: 'ContactItem',
   props: {
     contact: {
       type: Object,
