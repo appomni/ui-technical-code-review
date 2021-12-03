@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 async function deleteContact(contact) {
   return axios.delete(`http://localhost:3000/contacts/${contact.id}`);
