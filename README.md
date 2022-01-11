@@ -8,7 +8,7 @@ The first piece of functionality for this application is contact management, but
 
 This app's database is setup local to your environment, but let's operate under the assumption that this will not always be the case. In the near future we will move to a real API, meaning that multiple users of the application can be interacting with the data at any given time. 
 
-## Project setup steps:
+## Project set up steps:
 
 To run this application locally you will need to run the following commands:
 ```
@@ -17,7 +17,7 @@ npm install
 ```
 npm run serve
 ```
-In a seperate terminal run the following command to spin up the database:
+In a separate terminal run the following command to spin up the database:
 ```
 npm run database
 ```
